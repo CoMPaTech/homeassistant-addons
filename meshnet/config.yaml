@@ -4,8 +4,8 @@ version: 0.0.1
 arch:
   - amd64
 description: NordVPN Meshnet
-hassio_api: true
-homeassistant_api: true
+# Expose host network to addon
+host_network: true
 ingress: true
 init: false
 name: NordVPN Meshnet
@@ -14,6 +14,7 @@ privileged:
   - NET_RAW
 panel_icon: mdi:vpn
 panel_title: NordVPN Meshnet
+startup: application
 options:
   NORDVPN_NICKNAME: meshnet
   NORDVPN_TOKEN: abcdefgh12345678
