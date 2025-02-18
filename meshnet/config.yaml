@@ -1,0 +1,42 @@
+slug: meshnet
+url: https://github.com/compatech/homeassistant-addons/
+version: 0.0.1
+arch:
+  - amd64
+description: NordVPN Meshnet
+hassio_api: true
+homeassistant_api: true
+ingress: true
+init: false
+name: NordVPN Meshnet
+privileged:
+  - NET_ADMIN
+  - NET_RAW
+panel_icon: mdi:vpn
+panel_title: NordVPN Meshnet
+options:
+  NORDVPN_NICKNAME: meshnet
+  NORDVPN_TOKEN: abcdefgh12345678
+  # NORDVPN_TOKENFILE: path/to/tokenfile
+  NORDVPN_HEALTHCHECK_INTERVAL: 300
+  NORDVPN_HEALTHCHECK_URL: www.google.com
+  NORDVPN_MESHNET_DEBUG: false
+  
+schema:
+  NORDVPN_NICKNAME: str
+  NORDVPN_TOKEN: str
+  #NORDVPN_TOKENFILE: str
+  NORDVPN_HEALTHCHECK_INTERVAL: int
+  NORDVPN_HEALTHCHECK_URL: str
+  NORDVPN_MESHNET_DEBUG: bool
+  
+  NORDVPN_DENY_PEER_ROUTING: "str?"
+  NORDVPN_DENY_PEER_LOCAL: "str?"
+  NORDVPN_DENY_PEER_FILESHARE: "str?"
+  NORDVPN_DENY_PEER_REMOTE: "str?"
+  
+  NORDVPN_ALLOW_PEER_ROUTING: "str?"
+  NORDVPN_ALLOW_PEER_LOCAL: "str?"
+  NORDVPN_ALLOW_PEER_FILESHARE: "str?"
+  NORDVPN_ALLOW_PEER_REMOTE: "str?"
+
