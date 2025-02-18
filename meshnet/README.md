@@ -1,5 +1,7 @@
 # NordVPN meshnet
 
+Disclaimer: I don't use or test with NordVPN - testing this for an community member.
+
 Attempt at HA addon leveraging [MattsTechInfo](https://github.com/MattsTechInfo/Meshnet)'s approach leveraging options-to-env from one of MaxWinterSteins addons.
 
 ## Setup
