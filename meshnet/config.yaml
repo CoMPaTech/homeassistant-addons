@@ -1,6 +1,6 @@
 slug: meshnet
 url: https://github.com/compatech/homeassistant-addons/
-version: 0.0.1
+version: 0.0.2
 arch:
   - amd64
 description: NordVPN Meshnet

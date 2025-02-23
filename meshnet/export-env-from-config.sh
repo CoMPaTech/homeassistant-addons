@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 #
 # As Home Assistant parses the Add-On configuration towards /data/options.json 
 # we want all its values as environment variables.
